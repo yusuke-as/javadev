@@ -80,4 +80,31 @@ public class Common{
 			return gcdOf(b,mod);
 		}
 	}
+	public static void print(String msg){
+		System.out.println(msg);
+	}
+	public static void print(int msg){
+		System.out.println(msg);
+	}
+	public static void print(double msg){
+		System.out.println(msg);
+	}
+	public static void print(String msg,String delimiter){
+		System.out.print(msg+delimiter);
+	}
+	public static int input(String msg){
+		print(msg,"");
+		int n=new java.util.Scanner(System.in).nextInt();
+		return n;
+	}
+	public static String inputStr(String msg){
+		print(msg,"");
+		String str=new java.util.Scanner(System.in).next();
+		return str;
+	}
+	public static String inputLine(String msg){
+		print(msg,"");
+		String str=new java.util.Scanner(System.in).nextLine();
+		return str;
+	}
 }
