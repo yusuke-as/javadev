@@ -83,12 +83,15 @@ public class Common{
 	public static void print(String msg){
 		System.out.println(msg);
 	}
+<<<<<<< HEAD
 	public static void print(int msg){
 		System.out.println(msg);
 	}
 	public static void print(double msg){
 		System.out.println(msg);
 	}
+=======
+>>>>>>> 75fb8b576754cdd87d86fefeebe16b369e50d80c
 	public static void print(String msg,String delimiter){
 		System.out.print(msg+delimiter);
 	}
