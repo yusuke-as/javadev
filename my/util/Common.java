@@ -54,6 +54,21 @@ public class Common{
 			}
 		}
 	}
+	public static void selectionSort(int[] arr){
+		for(int i=0;i<arr.length-1;i++){
+			int index=i;
+			for(int j=i+1;j<arr.length;j++){
+				if(arr[index]>arr[j]){
+					index=j;
+				}
+			}
+			if(index!=i){
+				int temp=arr[i];
+				arr[i]=arr[index];
+				arr[index]=temp;
+			}
+		}
+	}
 	public static int maxOf(int[] arr){
 		int max=arr[0];
 		for(int i=1;i<arr.length;i++){
@@ -83,15 +98,12 @@ public class Common{
 	public static void print(String msg){
 		System.out.println(msg);
 	}
-<<<<<<< HEAD
 	public static void print(int msg){
 		System.out.println(msg);
 	}
 	public static void print(double msg){
 		System.out.println(msg);
 	}
-=======
->>>>>>> 75fb8b576754cdd87d86fefeebe16b369e50d80c
 	public static void print(String msg,String delimiter){
 		System.out.print(msg+delimiter);
 	}
