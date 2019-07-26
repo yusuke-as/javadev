@@ -69,6 +69,17 @@ public class Common{
 			}
 		}
 	}
+	public static void insertionSort(int[] arr){
+		for(int i=1;i<arr.length;i++){
+			int pick=arr[i];
+			int j=i-1;
+			while(j>=0 && arr[j]>pick){
+				arr[j+1]=arr[j];
+				j--;
+			}
+			arr[j+1]=pick;
+		}
+	}
 	public static int maxOf(int[] arr){
 		int max=arr[0];
 		for(int i=1;i<arr.length;i++){
@@ -121,5 +132,9 @@ public class Common{
 		print(msg,"");
 		String str=new java.util.Scanner(System.in).nextLine();
 		return str;
+	}
+	public static int rand(int a,int b){
+		Random rand =new Random();
+		return rand.nextInt(b-a+1)+a;
 	}
 }
