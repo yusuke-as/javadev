@@ -118,6 +118,12 @@ public class Common{
 	public static void print(String msg,String delimiter){
 		System.out.print(msg+delimiter);
 	}
+	public static void print(int i,String delimiter){
+		System.out.print(i+delimiter);
+	}
+	public static void print(double d,String delimiter){
+		System.out.print(d+delimiter);
+	}
 	public static int input(String msg){
 		print(msg,"");
 		int n=new java.util.Scanner(System.in).nextInt();
