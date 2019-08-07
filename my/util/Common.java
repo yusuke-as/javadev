@@ -106,23 +106,11 @@ public class Common{
 			return gcdOf(b,mod);
 		}
 	}
-	public static void print(String msg){
-		System.out.println(msg);
+	public static void print(Object msg){
+		System.out.println(msg.toString());
 	}
-	public static void print(int msg){
-		System.out.println(msg);
-	}
-	public static void print(double msg){
-		System.out.println(msg);
-	}
-	public static void print(String msg,String delimiter){
-		System.out.print(msg+delimiter);
-	}
-	public static void print(int i,String delimiter){
-		System.out.print(i+delimiter);
-	}
-	public static void print(double d,String delimiter){
-		System.out.print(d+delimiter);
+	public static void print(Object msg,String delimiter){
+		System.out.print(msg.toString()+delimiter);
 	}
 	public static int input(String msg){
 		print(msg,"");
